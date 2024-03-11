@@ -9,7 +9,7 @@ public class GameLevel : MonoBehaviour
     string playerSave = "";
     string playerName = "";
 
-    void Start()
+    public void UpdateLevelInfo()
     {
         if(PlayerPrefs.HasKey("name"))
         {

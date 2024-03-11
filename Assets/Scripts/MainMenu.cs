@@ -24,6 +24,8 @@ public class MainMenu : MonoBehaviour
         settingsPanel.SetActive(false);
         startGamePanel.SetActive(false);
         continuePanel.SetActive(false);
+
+        PlayerPrefs.DeleteAll();
     }
 
     public void StartGame()
@@ -54,7 +56,12 @@ public class MainMenu : MonoBehaviour
 
     public void OpenScene()
     {
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
+
+        mainMenuPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        startGamePanel.SetActive(false);
+        continuePanel.SetActive(false);
     }
 
     public void EnterName()
